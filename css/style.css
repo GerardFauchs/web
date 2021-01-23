@@ -1,0 +1,51 @@
+/*Header pantalla width => 600px*/
+
+@media(min-width:600px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav1 {
+        order: 4;
+    }
+    .nav2 {
+        order: 1;
+    }
+    .nav3 {
+        display: flex;
+        order: 2;
+    }
+    .nav4 {
+        order: 3;
+    }
+    .nav3_1 {
+        margin: 0em 1em 0em 2em;
+    }
+    .nav3_2 {
+        margin: 0em 2em 0em 1em;
+    }
+}
+
+
+/*Header pantalla width < 600px*/
+
+@media(max-width:599px) {
+    header nav,
+    .nav3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav div {
+        margin: 0.2em;
+    }
+    .nav1 {
+        background-color: orange;
+    }
+    .nav2 {
+        background-color: orange;
+    }
+    .nav3 {
+        background-color: orange;
+    }
+}
