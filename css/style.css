@@ -42,13 +42,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*
-    justify-content: center;
-    
-    align-items: flex-start;
-    align-content: space-around;
-    */
-    /*align-items: center;*/
 }
 
 .mainClubes {
@@ -61,13 +54,23 @@ footer {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     grid-gap: 1em;
 }
 
 .grid-container img {
     width: 100%;
     height: auto;
+}
+
+.articleImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articleImage h3 {
+    margin-top: 0;
 }
 
 body header nav a {
