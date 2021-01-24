@@ -1,4 +1,58 @@
-/*Header pantalla width => 600px*/
+html {
+    font-size: 16px;
+    /*Mide de referencia. Tots els valors amb rem es multipliquen per aquest.Exemple:
+    10px*1.5rem -> 15px;
+    10px*3rem -> 30px;
+    Tambe es pot aplicar pel margin i padding*/
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0vh;
+}
+
+.header {
+    background-color: #E8E8E8;
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+.main {
+    background-color: #E8E8E8;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /*
+    justify-content: center;
+    
+    align-items: flex-start;
+    align-content: space-around;
+    */
+    /*align-items: center;*/
+}
+
+
+/*
+.main section {
+    width: 150vh;
+}*/
+
+footer {
+    background-color: #433A44;
+    color: #ffffff;
+    padding: 2.25rem 0.25rem 0.25rem 0.25rem;
+}
+
+
+/*
+.section1 {
+    text-align: center;
+}
+*/
+
+
+/*pantalla width => 600px*/
 
 @media(min-width:600px) {
     header nav {
@@ -24,10 +78,40 @@
     .nav3_2 {
         margin: 0em 2em 0em 1em;
     }
+    .footer1 p,
+    .footer2 p,
+    .footer3 p {
+        margin: 0em 0.5em 0em 0.25em;
+    }
+    .footer1 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: space-around;
+    }
+    .footer2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .footer2_2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 
-/*Header pantalla width < 600px*/
+/*Pantalla width < 600px*/
 
 @media(max-width:599px) {
     header nav,
@@ -47,5 +131,25 @@
     }
     .nav3 {
         background-color: orange;
+    }
+    .footer1 p,
+    .footer2 p,
+    .footer3 p {
+        margin: 0em 0.5em 0em 0.25em;
+    }
+    .footer1,
+    .footer2,
+    .footer3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: space-around;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .footer4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
